@@ -24,7 +24,11 @@ func Error(args ...interface{}) {
 }
 
 func Debug(args ...interface{}) {
-
 	log.SetPrefix("DEBUG: ")
 	log.Println(args...)
+}
+
+func Fatal(args ...interface{}) {
+	log.SetPrefix("INFO: ")
+	log.Fatal(args...)
 }
